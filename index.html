@@ -1,162 +1,68 @@
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="This is a simple practice HTML document with a header, articles, an aside, and a footer.">
+    <meta name="keywords" content="HTML, practice, blog, articles, website">
+    <title>My Document</title>
+    <style> 
+        #main-header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
 
-    </head>
-    <body>
-        <!--heading: This is a comment that will not be displayed in the browser -->
-        <h1>My Simple HTML Page</h1>
-        <h3>Welcome to the homepage!</h3>
+        #main-footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style> <!-- Inline CSS -->
+</head>
+<body>
+    <header id="main-header">
+        <h1>My website</h1>
+    </header>
+    <section>
+        <article class="post">
+            <h3>Blog post 1</h3>
+            <small>Posted by Mash on July 17</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dolore officiis quas natus, beatae voluptates quam fugit voluptatibus vel iusto iste reprehenderit, harum est nisi officia et praesentium sequi ullam.</p>
+            <a href="http://linkedin.com">Read More</a>
+        </article>
+        <article class="post">
+            <h3>Blog post 2</h3>
+            <small>Posted by Mash on July 19</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dolore officiis quas natus, beatae voluptates quam fugit voluptatibus vel iusto iste reprehenderit, harum est nisi officia et praesentium sequi ullam.</p>
+            <a href="http://linkedin.com">Read More</a>
+        </article>
+        <article class="post">
+            <h3>Blog post 3</h3>
+            <small>Posted by Mash on July 27</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dolore officiis quas natus, beatae voluptates quam fugit voluptatibus vel iusto iste reprehenderit, harum est nisi officia et praesentium sequi ullam.</p>
+            <a href="http://linkedin.com">Read More</a>
+        </article>
+    </section>
 
-        <!--paragraph: This is another comment that will not be displayed in the browser-->
-        <p>This is a simple HTML page.</p>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, enim? <a href="https://instagram.com" target="_blank">ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui cupiditate voluptatem repellat mollitia odit maiores iure fuga eaque! Nulla autem voluptatibus earum, perspiciatis provident repellendus mollitia veritatis ut itaque?</a>
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur, <strong>adipisicing elit. Repellat,</strong> aut minima. <em> assumenda magnam maiores ad, dolorem modi,</em> molestiae commodi, alias recusandae tempore at. Voluptas est eius quas impedit delectus.</p>
+    <aside>
+        <h3>Categories</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-        <!--lists-->
-        <ul> <!--unordered list--> <!--Shown as bullet list by default--> 
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-
-        <ol>
-            <!--ordered list--> <!--Shown as numbered list by default-->
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ol>
-
-        <!--tables-->
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>City</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr> <!--tr: This is a table row-->
-                    <td>Matha Facka</td> <!--td: This is a table data cell-->
-                    <td>25</td>
-                    <td>New York city</td>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>30</td>
-                    <td>Los Angeles</td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>28</td>
-                    <td>Chicago</td>
-                </tr>
-                <tr>
-                    <td>Emily Johnson</td>
-                    <td>22</td>
-                    <td>Houston</td>
-                </tr>
-                <tr>
-                    <td>Michael Brown</td>
-                    <td>35</td>
-                    <td>Phoenix</td>
-                </tr>
-                <tr>
-                    <td>Sarah Davis</td>
-                    <td>27</td>
-                    <td>Philadelphia</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p>Here is a <a href="https://www.example.com" target="_blank">link to an external website</a>.</p>
-
-
-<br><br> <!--br: This is a line break that will not be displayed in the browser-->
-<hr> <!--hr: This is a horizontal rule that will not be displayed in the browser--><br>
-        <!-- forms -->
-        <form action="process.php" method="POST"> <!--INVOLVES SOME SERVER SIDE PROGRAMMING-->
-            <div>
-                <Label>First Name:</Label>                
-                <input type="text" name="FirstName" required placeholder="Enter your first name"> <!--placeholder: This will place a placeholder text in the input field when the page is loaded-->
-            </div> <!--input: This is a single line text input field--> <!--required: This will make the input field mandatory to fill out before submitting the form-->
-            <br>
-            <div>
-                <label>Last Name:</label>
-                <input type="text" name="LastName" required placeholder="Enter your last name"> <!--input: This is a single line text input field-->
-            </div>
-            <br>
-            <label>Email</label>
-            <input type="email" name="Email" required placeholder="Enter your email address"> <!--email: using the input type email will verify whether you are using a authenticated email address-->
-            <br><br>
-            <div>
-            <label>Message</label>
-            <textarea name="Message" placeholder="Enter your message here."></textarea> <!--textarea: This is a multi-line text input field-->
-            </div>
-            <br><br>
-            <div>
-                <label>Gender</label>
-                <select name="gender">
-                    <option value="Male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                    <option value="prefer not to say">Prefer not to say</option>
-                </select>
-            </div>
-            <br><br>
-            <div>
-                <label>Age</label>
-                <input type="number" name="age" min="0" max="120" value="30"> <!--number: This is a number input field--> <!--min: This is the minimum value allowed in the input field--> <!--max: This is the maximum value allowed in the input field--> 
-            </div> <!--value; This will place a predetermined value on the bar when the page is loaded-->
-            <br><br>
-            <div>
-                <label>Birthday</label>
-                <input type="date" name="birthday"> <!--date: This is a date input field/ provides a calendar-->
-            </div>
-            <br><br>
-            <input type="submit" value="Submit"> <!--submit: This is a submit button that will submit the form data to the server-->
-        </form>
-
-        <button>Get Scammed</button> <!--button: This is a button that will not do anything when clicked-->
-        <button onclick="alert('You clicked the button!')">Click Me</button> <!--onclick: This is an event handler that will execute the JavaScript code when the button is clicked-->
-    
-        <br><br>
-
-   <!-- Images -->
-    <img src="https://via.placeholder.com/150" alt="Placeholder Image"> <!--img: This is an image tag that will display an image from the given URL-->
-    <p>Here is an image from a link <a href=""><img src="https://via.placeholder.com/150" alt="Placeholder Image"> <!--img: This is an image tag that will display an image from the given online URL--></a> </p>
-
-    <br><br>
-
-        <!-- Quotations -->
-        <blockquote cite="https://facebook.com"> <!--blockquote: This is a blockquote tag that will display a quote or a citation from another source-->
-            <p>This is a blockquote. It is used to display a quote or a citation from another source.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse libero recusandae nam obcaecati dignissimos deleniti vero nobis cumque, voluptatum animi rem officiis iusto quae ratione odit. Atque quo laboriosam repellendus explicabo soluta error voluptatem dolorum quidem accusantium accusamus corrupti amet dolor, obcaecati facere aperiam est libero sint voluptates a!</p>
-        </blockquote>
-
-        <p>The <abbr title="World Wresting Competition">WWE</abbr> is amazing even if its just good acting</p> <!--abbr: This is an abbreviation tag that will not be displayed in the browser-->
-
-        <p>The <cite>HTML Crash Course</cite> by sos and so media</p> <!--cite: This is a citation tag that will not be displayed in the browser but it informs the browser that there is another source of the same name-->
-
-    <div style="margin-top: 500px;"></div>
-    </body>
-
-<header></header> <!--header: This is a header tag that will not be displayed in the browser--> <!--header: defines the introductory content of a document -->
-<footer></footer> <!--footer: This is a footer tag that will not be displayed in the browser--> <!--footer: defines the footer for a document or section -->
-<aside></aside> <!--aside: This is an aside tag that will not be displayed in the browser--> <!--aside: defines content that is related to the main content of the document, but is not part of it -->
-<figure></figure> <!--figure: This is a figure tag that will not be displayed in the browser--> <!--figure: defines self-contained content, like illustrations, diagrams, photos, code listings, etc. that is referenced from the main content -->
-<main></main> <!--main: This is a main tag that will not be displayed in the browser--> <!--main: defines the main content of the document, which is unique to the document and not repeated across multiple pages -->
-<article></article> <!--article: This is an article tag that will not be displayed in the browser--> <!--article: defines independent, self-contained content that can be distributed and reused independently from the main content of the document -->
-<nav></nav> <!--nav: This is a navigation tag that will not be displayed in the browser--> <!--nav: defines a section of the document that contains navigation links to other pages or sections of the document -->
-<section></section> <!--section: This is a section tag that will not be displayed in the browser--> <!--section: defines a section of the document, which is a thematic grouping of content, typically with a heading -->
-<details></details> <!--details: This is a details tag that will not be displayed in the browser--> <!--details: defines a section of the document that can be expanded or collapsed to show or hide additional content -->
+    <footer id="main-footer">
+        <p>Copyright &copy 2017</p>
+    </footer>
+</body>
+</html>

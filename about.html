@@ -32,16 +32,22 @@
             font-size: 20px;
         }
 
+          #contact{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
         #main-footer {
             background-color: black;
             color: white;
             text-align: center;
             font-size: 20px;
-            position: relative;
             bottom: 0;
             width: 100%;
             padding: 10px;
         }
+
+      
 
     </style>
 </head>
@@ -79,6 +85,37 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque. Quasi, doloremque. Doloremque, voluptatibus. Doloribus, cumque. Quasi, doloremque. Doloremque, voluptatibus.</p>
         </article>
         
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at <a href="mailto:info.random123@example.com">info.random123@example.com</a>.</p>
+            <br><br>
+
+                <form>
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="name" placeholder="First Name" required>
+                    </div><br>
+                    <div>
+                        <label>surname</label>
+                        <input type="text" name="surname" placeholder="Last Name" required>
+                    </div><br>
+                    <div>
+                        <label for="email">Email Address</label>                    
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div><br>
+                    <div>
+                        <label>Comment</label>
+                        <textarea name="comment" placeholder="Your comment here..." required style="width: 500px; height: 500px;"></textarea>
+                    </div><br>
+                    <div>
+                        <label for="data">Birthday</label>
+                        <input type="datetime-local" name="birthday" id="birthday" required>
+                    </div><br>
+                        <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section><br><br>
+
         <footer id="main-footer">
             <p>&copy; 2023 My Website. All rights reserved.</p>
             <p>Follow us on <a href="http://linkedin.com">LinkedIn</a></p>

@@ -27,3 +27,6 @@ This is a repository specifically to be used when i decided to relearn web devel
         - [ ]  Track progress daily using the planner.
         - [ ]  Do a 5-minute reflection at the end of each day.
         - [ ]  Weekly review every Sunday
+
+## Ultimate Goal
+- 1. To build future income through freelancing and job opportunities, I need strong, demonstrable frontend skills. By executing this sprint, I break through beginner stagnation and move toward long-term financial independence.

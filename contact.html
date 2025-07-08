@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a simple practice HTML document with a header, articles, an aside, and a footer.">
+    <meta name="keywords" content="HTML, practice, blog, articles, website">
+    <title>Contact Us</title>
+    <style>
+        #main-header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        #sidebar {
+            background-color: rgba(211, 211, 211, 0.016);
+            padding: 10px;
+            width: 200px;
+            float: right;
+        }
+
+        .contacts {
+            font-size: 18px;
+            border: 20px solid rgba(211, 211, 211, 0.016);
+        }
+
+        #main-footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out with any questions or feedback!</p>
+    </header>
+
+    <aside id="sidebar">
+            <details>
+                <summary>
+                    <h3>Navigation</h3>
+                </summary>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+            </details>
+    </aside> <br><br><br>
+    
+    <section class="contacts">
+        <h2>Fill in the necessary details</h2>
+        <form class="contacts"> 
+            <p>We value your feedback and inquiries. Please fill out the form below to get
+            <fieldset><!--Used to group related data in a form.-->
+                <legend>Personal</legend>
+                    <label for="name">Name:
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+                    </label><br><br>
+                    <label for="email">Email:
+                    <input type="email" id="email" autocomplete="off" name="email" placeholder="Enter your email" required/>
+                    </label><br><br>
+                    <label for="number">Phone number
+                    <input type="tel" id="number" name="number" autocomplete="off" placeholder="Enter your phone number" required/>
+                    </label><br>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Details</legend>
+                    <label for="gender">Gender <br><br>
+                        <input type="radio" id="gender" name="male"/>Male <br>
+                        <input type="radio" name="female" id="gender"/>Female <br>
+                        <input type="radio" name="other id="gender" value="other"/>Other <br>
+                    </label><br>
+                    <label for="country">Country
+                        <input type="text" id="country" name="country" placeholder="Enter your country" required/>
+                    </label> <br><br>                    
+                    <label for="date">Current Date
+                    <input type="datetime-local" id="date" name="date" required/>
+                    </label> <br><br>
+                    <label for="password">Passcode
+                    <input type="password" id="password" name="password" placeholder="Enter your passcode" required/>
+                    </label> <br><br>
+                    <label for="document">Submit CV
+                    <input type="file" name="document" id="document">
+                    </label> <br><br>
+                    <label for="pet">Type of pet <br><br>
+                        <input type="checkbox"name="pet" value="dog">Dog <br>
+                        <input type="checkbox"name="pet" value="cat">Cat <br>
+                        <input type="checkbox"name="pet" value="fish">Fish <br>
+                        <input type="checkbox"name="pet" value="bird">Bird <br>
+                        <input type="checkbox" name="pet" id="none" value="none">None <br>
+                    </label><br>
+                    <label for="age">Likelyhood of sharing this page with a friend: <br><br>
+                        <input type="range" name="age" id="age" min="0" max="200" value="50">
+                    </label><br><br>
+
+                    <label for="occupation">Occupation: 
+                        <select name="occupation" id="occupation">
+                            <option value="student">Student</option>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label> <br>
+                </fieldset> <br>
+            <fieldset>
+                <legend>Feedback</legend>
+                    <label for="message">Message: <br><br> <textarea name="message" id="message" placeholder="Enter your message here." rows="auto" cols="50"></textarea>
+                <!-- <input type="textarea" id="message" name="message" placeholder="Enter your message here" required style="height: 400px; width: auto;"/>-->
+                    </label><br><br>
+                    <!--input /> will give you an empty space as a preview of sorts-->
+                <input type="reset" value="reset">
+                <button type="submit">Click me</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="main-footer">
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        </footer>
+</body>
+</html>

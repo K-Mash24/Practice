@@ -1,0 +1,104 @@
+/*{
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+    background: lightgray;
+    color: #555;
+    font: arial 16px;
+    line-height: 1.0em;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: coral;
+    color: white;
+}
+
+#navbar{
+    background: #333;
+    color: white;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: white;
+    padding-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#navbar a hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: solid;
+}
+
+#showcase{
+    background-image: url('/pictures/R\ \(7\).jpeg');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.0em;
+    padding-top: 30px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font: 18px arial;
+    text-transform: capitalize;
+    color: black;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    font: 20px;
+}
+
+#main-footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+
+     #sidebar{
+        width: 100%;
+        float: none;
+    }
+}

@@ -36,6 +36,10 @@ a:visited {
     color: white;
 }
 
+.clr{
+    clear: both; /*Ask for clarification on the meaning of this tag*/
+}
+
 
 body{
     background-color: #f4f4f4;
@@ -91,4 +95,82 @@ body{
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+.block{
+    float: left;
+    width: 30%;
+    padding: 1%;
+    border: 1px solid black;
+    box-sizing: border-box; /*Prevents the elements of the box to overlap each other*/
+    margin-left: 2%;
+    font: italic 18px arial;
+}
+
+#main-block{
+    float: left;
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    font: italic 20px times new roman;
+    text-transform: capitalize;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    background: black;
+    color: #f4f4f4;
+}
+
+.p-box{
+    width: 800px auto;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    margin-left: 10%;
+}
+
+.p-box h1{
+    top: 140px;
+    left: 100px;
+    position: absolute;
+}
+
+.p-box h2{
+    top: 240px;
+    left: 100px;
+    position: absolute;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.list{
+    width: 60%;
+    float: center;
+}
+
+.list li:first-child{
+    background: red;
+}
+
+.list li:last-child{
+    background: silver;
+}
+
+.list li:nth-child(even){
+    background-color: blue;
+}
+
+.list li:nth-child(3){
+    background-color: purple;
 }

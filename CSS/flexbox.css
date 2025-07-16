@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #5870c5;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+#navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#navbar{
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#navbar:hover{
+    color: blueviolet;
+}
+
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#navbar ul{
+    display: flex;
+    }
+
+#navbar ul li{
+    margin-left: 20px;
+}
+
+.header{
+    background-color: darkblue;
+    color: white;
+    min-height: 400px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background: darkblue;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+}
+
+.box i{
+    margin-left: 10px;
+}
+
+#main-footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+@media(max-width: 775px){
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.flex-container{
+    height: 500px;
+    display: flex;
+    background-color: lightgray;
+    /*Always on the main axis*/
+    /*justify-content: start;
+    height: 400px;
+    /*Always on the cross axis/
+    align-items: end;
+    flex-direction: column;*/
+    flex-wrap: wrap;
+}
+
+.item{
+    flex:2 4 300px;
+    height: 100px;
+    background: #254de4;
+    margin: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.flex-container ::after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+/*.item:nth-of-type(1){
+    align-self: end;
+    order: 3;
+}
+
+.item:nth-of-type(2){
+    align-self: center;
+    flex-basis: 200px;
+}
+
+.item:nth-of-type(3){
+    align-self: flex-start;
+    flex-grow: 1;
+}*/
+
